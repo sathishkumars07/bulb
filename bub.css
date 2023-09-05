@@ -1,0 +1,36 @@
+body{
+    background-color: #111111;
+    position: relative;
+}
+#yellow{
+    /*fill:none !important;*/
+}
+#red,#blue{
+    stroke-dasharray: 91 !important;
+    stroke-dashoffset: 91;
+    animation: a 3s linear forwards;
+}
+button{
+    position: absolute;
+    top: 298px;
+    left: 163px;
+    transform: rotateZ(-90deg);
+    border: none;
+}
+
+@keyframes go{
+    from{
+        stroke-dashoffset: -91;
+    }
+    to{
+        stroke-dashoffset: 0;
+    }
+}
+@keyframes back{
+    from{
+        stroke-dashoffset: 0;
+    }
+    to{
+        stroke-dashoffset: -91;
+    }
+}
